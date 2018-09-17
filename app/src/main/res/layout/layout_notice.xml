@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_34">
+
+    <ImageView
+        android:id="@+id/horn_icon"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:src="@drawable/horn_icon"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24" />
+
+    <TextView
+        android:id="@+id/text_notice"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_51"
+        android:text="一起来开启您的中奖模式~"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/dp_29"
+    android:layout_height="@dimen/dp_33">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/jingcai_icon"
+        android:layout_width="@dimen/dp_33"
+        android:layout_height="@dimen/dp_33"
+        android:src="@drawable/jingcai_icon" />
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp_29"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_9"
+        android:layout_toRightOf="@+id/jingcai_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_33"
+        android:background="@drawable/jingcai_kaijiang_bg"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="主队"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#FEFEFE"
+            android:layout_weight="2"
+            android:id="@+id/host_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="比分"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#FEFEFE"
+            android:layout_weight="1"
+            android:id="@+id/score_compition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="客队"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#FEFEFE"
+            android:layout_weight="2"
+            android:id="@+id/guest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

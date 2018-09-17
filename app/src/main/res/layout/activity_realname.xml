@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_color"
+    android:id="@+id/fahter"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_31"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="本平台不向未满18周岁的用户提供服务"
+
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12" />
+
+
+    <LinearLayout
+        android:background="@color/white_color"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="真实姓名 :"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/real_name"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:hint="须于身份证保持一致"
+                android:background="@null"
+                android:text=""
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="@color/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="身份证号码 :"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:singleLine="true"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPassword"
+                android:id="@+id/real_numer"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:hint="仅支持大陆第二代身份证"
+                android:background="@null"
+                android:maxLength="18"
+                android:text=""
+                android:textSize="@dimen/sp_14"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button_login"
+        android:enabled="false"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#FFFFFF"
+        android:text="确定"
+        android:background="@drawable/selector_login_bt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_below="@+id/password_layout"
+        android:layout_width="@dimen/dp_276"
+        android:layout_height="@dimen/dp_47" />
+
+</LinearLayout>

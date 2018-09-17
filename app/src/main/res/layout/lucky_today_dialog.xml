@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image"
+            android:src="@drawable/today_lucky"
+            android:layout_width="@dimen/dp_260"
+            android:layout_height="@dimen/dp_180" />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/image"
+            android:orientation="vertical"
+            android:background="@drawable/tomorrow_lucky_shape"
+            android:layout_alignLeft="@+id/image"
+            android:layout_alignRight="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iamge_ikonw"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_25"
+                android:src="@drawable/i_konw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_100"
+            android:id="@+id/how_much_red"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/sp_19"
+            android:text="明天您将有x个红包到账啦"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/how_much_red"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="#FFE617"
+            android:textSize="@dimen/sp_12"
+            android:text="记得使用哦，可别浪费了中大奖的机会了~"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

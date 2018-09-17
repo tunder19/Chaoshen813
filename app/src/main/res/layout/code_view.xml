@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/code_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_125"
+        android:background="@drawable/lottery_bg"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:id="@+id/er_weicode"
+                android:layout_width="@dimen/dp_78"
+                android:layout_height="@dimen/dp_78"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/default_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="长按识别下载客户端"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/sp_9" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/dp_41"
+            android:gravity="center|right"
+            android:layout_gravity="center|right"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/app_falge"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="@dimen/dp_17"
+                android:layout_below="@+id/app_falge"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

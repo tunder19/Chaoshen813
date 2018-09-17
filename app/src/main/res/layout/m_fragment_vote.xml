@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/backgour_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/title_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_44"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="投票"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/sp_18" />
+
+
+        </LinearLayout>
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:layout_marginTop="@dimen/dp_3"
+            android:id="@+id/refresh_list"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_100"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center|bottom"
+            android:layout_centerInParent="true"
+            android:id="@+id/no_net_word"
+            android:text="无网络,请点击重试"
+            android:drawableTop="@drawable/no_netword"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

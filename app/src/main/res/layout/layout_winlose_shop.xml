@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/time_data1"
+        android:id="@+id/odds_box"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_marginBottom="@dimen/dp_4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:id="@+id/host_name"
+                android:textColor="#C8152D"
+                android:textSize="@dimen/sp_12"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#666666"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="vs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/guest_name"
+                android:gravity="center"
+                android:textColor="#C8152D"
+                android:textSize="@dimen/sp_12"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/flage_11"
+            layout="@layout/layout_odds_box_item" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_6"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

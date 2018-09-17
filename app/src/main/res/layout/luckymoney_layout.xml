@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/sfdfdf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/lucky_bg_1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dp_5">
+
+                <RelativeLayout
+                    android:background="@drawable/lucky_money1"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                    <RelativeLayout
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/flage_2"
+                        android:layout_centerInParent="true"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_30"
+                        >
+
+                        <TextView
+                            android:layout_marginRight="@dimen/dp_1"
+                            android:layout_alignBottom="@+id/money"
+                            android:layout_toLeftOf="@+id/money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¥"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/sp_10" />
+
+                        <TextView
+                            android:id="@+id/money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/sp_14"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lucky_money2" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/hongbao2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_60"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/hongbao"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:id="@+id/lucky_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="红包金额：2.00元"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/lucky_money_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="有效期：2018/06/31 23:59"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/lucky_money_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="新手注册活动赠送"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_12" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_25"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/time_out_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/lucky_used"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/user_bt"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_31"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_lucky_money"
+                    android:enabled="false"
+                    android:text="立即使用"
+                    android:textColor="#C8152D"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/what_lottery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lucky_bg_2"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_26"
+            android:text=""
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+</LinearLayout>

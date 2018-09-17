@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/XFrame_white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/real_fa"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_62">
+
+        <ImageView
+
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_bg"
+            android:id="@+id/bank_icon"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="@dimen/dp_31"
+            android:layout_height="@dimen/dp_31" />
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:textColor="#333333"
+            android:text=""
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bank_icon"
+            android:id="@+id/bank_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/checkbox_t"
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:checked="true"
+            style="@style/CustomCheckboxTheme" />
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@color/line_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+</LinearLayout>

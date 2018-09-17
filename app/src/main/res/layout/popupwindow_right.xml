@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_135"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_alignRight="@+id/flage2"
+        android:layout_marginRight="@dimen/dp_10"
+        android:id="@+id/flage"
+        android:src="@drawable/sanjiao_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/dp_3"
+        android:id="@+id/flage2"
+        android:layout_below="@+id/flage"
+        android:layout_width="@dimen/dp_135"
+        android:layout_height="@dimen/dp_107"
+        android:background="@drawable/right_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kajiang_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="4"
+            android:drawableLeft="@drawable/kaijiang_icon"
+            android:drawablePadding="@dimen/dp_20"
+            android:gravity="center"
+            android:text="最近开奖"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+        <View
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+           style="@style/color_line_hor"/>
+
+        <TextView
+            android:id="@+id/wanfa_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="4"
+            android:drawableLeft="@drawable/wanfa_icon"
+            android:drawablePadding="@dimen/dp_20"
+            android:gravity="center"
+            android:text="玩法说明"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</RelativeLayout>

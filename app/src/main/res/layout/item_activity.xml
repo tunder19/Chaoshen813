@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/all_item"
+    >
+
+    <LinearLayout
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/infromation_list_bg"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:paddingRight="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginRight="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_3"
+                android:id="@+id/activity_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_115"
+                android:scaleType="fitXY"
+                android:src="@drawable/lunbo_nodata" />
+
+            <ImageView
+                android:id="@+id/staus_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/no_start_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14"
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="123123"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/text_colorin9"
+            android:textSize="@dimen/sp_10"
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

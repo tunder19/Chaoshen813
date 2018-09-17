@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_52"
+        android:src="@drawable/right_icon" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜你，"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_16" />
+    <TextView
+        android:id="@+id/notice_tx"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置密码已成功！"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_16" />
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="@dimen/dp_276"
+        android:layout_height="@dimen/dp_47"
+        android:layout_below="@+id/password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/selector_login_bt"
+        android:text="马上实名认证"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:padding="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_40"
+        android:id="@+id/real_name"
+        android:layout_marginTop="@dimen/dp_57"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过>>"
+        android:textColor="#3F8BC5"
+        android:textSize="@dimen/sp_12" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/father1"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65">
+
+        <ImageView
+            android:id="@+id/check_logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/zhifubao_icon" />
+
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:id="@+id/check_text1"
+            android:layout_marginLeft="@dimen/sp_17"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/check_logo1"
+            android:textColor="@color/text_colorin3"
+            android:text="提现到支付宝"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/produce_1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/check_text1"
+            android:src="@drawable/produce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_33"
+            android:layout_alignParentRight="true"
+            android:id="@+id/pause_text1"
+            android:layout_marginLeft="@dimen/sp_12"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_colorin9"
+            android:text="暂停"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line_color2"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        style="@style/color_line_hor" />
+
+
+    <RelativeLayout
+        android:id="@+id/father2"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65">
+
+        <ImageView
+            android:id="@+id/check_logo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/zhifubao_icon" />
+
+        <TextView
+            android:textSize="@dimen/sp_14"
+            android:id="@+id/check_text2"
+            android:layout_marginLeft="@dimen/sp_17"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/check_logo2"
+            android:textColor="@color/text_colorin3"
+            android:text="提现到支付宝"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/produce_2"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/check_text2"
+            android:src="@drawable/produce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_33"
+            android:layout_alignParentRight="true"
+            android:id="@+id/pause_text2"
+            android:layout_marginLeft="@dimen/sp_12"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_colorin9"
+            android:text="暂停"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <View
+        style="@style/color_line_hor"
+        />
+
+</LinearLayout>

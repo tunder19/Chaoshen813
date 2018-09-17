@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/father_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_father"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+
+            android:id="@+id/dead_time_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_27"
+            android:background="#f2f2f2">
+
+            <TextView
+                android:id="@+id/history_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:text=""
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+
+                android:drawablePadding="@dimen/dp_2"
+                android:id="@+id/dead_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_11"
+                android:drawableRight="@drawable/arrow_down"
+                android:text=""
+                android:textColor="@color/text_colorin6"
+                android:textSize="@dimen/sp_12" />
+
+
+        </RelativeLayout>
+        <View
+            style="@style/color_line_hor"/>
+
+        <LinearLayout
+            android:id="@+id/my_loading_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在加载" />
+
+            <ImageView
+                android:id="@+id/my_loading"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center"
+                android:background="@drawable/refreshing_list" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/test_padding_margin"
+            android:paddingTop="@dimen/test_padding_margin">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:background="@color/white_color"
+                    android:id="@+id/refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/buy_bottem"
+                    android:layout_marginBottom="@dimen/dp_5"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+                <LinearLayout
+                    android:id="@+id/buy_bottem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+                    <View
+                       style="@style/color_line_hor" />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_15"
+                        android:background="#CCCCCC"
+                        android:visibility="gone" />
+
+                    <include layout="@layout/layout_cathectic_bottom" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_comptie"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="暂无可投注赛事"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

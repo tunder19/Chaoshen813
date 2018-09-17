@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_40"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+
+            android:id="@+id/points_rank"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@drawable/adapter_rank_bg"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/team_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@+id/points_rank"
+            android:maxLength="5"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <com.example.administrator.chaoshen.widget.HorColumn
+            android:id="@+id/vote_bar"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_120"
+            app:v_maxWidth="@dimen/dp_160" />
+
+
+        <TextView
+            android:id="@+id/vote_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_11"
+            android:layout_toRightOf="@+id/vote_bar"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

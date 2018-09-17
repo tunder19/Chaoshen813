@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/backgour_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_bar_bg3"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/title_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white_color"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="资讯"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44" />
+
+
+
+    </LinearLayout>
+
+
+
+    <com.example.administrator.chaoshen.widget.TabPageIndicator
+        android:background="@color/white_color"
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar1"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+    <View
+        style="@style/color_line_hor"
+       />
+    <TextView
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:textSize="@dimen/sp_12"
+        android:id="@+id/score_title"
+        android:textColor="@color/text_colorin9"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/arrow_id"
+        android:layout_marginRight="@dimen/dp_13"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/score_title"
+        style="@style/color_line_hor"
+        />
+
+</RelativeLayout>

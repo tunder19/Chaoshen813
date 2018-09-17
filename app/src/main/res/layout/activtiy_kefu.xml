@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/commit_editext_father"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_158"
+        android:layout_margin="@dimen/dp_15"
+        android:background="@drawable/commite_yijian"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_8">
+
+        <RelativeLayout
+            android:layout_above="@+id/word_limit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150">
+
+            <EditText
+                android:id="@+id/commit_editext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="请输入您的意见或反馈"
+                android:maxLength="200"
+                android:textColor="@color/text_colorin9"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/word_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="0/200" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="@dimen/dp_276"
+        android:layout_height="@dimen/dp_47"
+        android:layout_below="@+id/password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/selector_login_bt"
+        android:enabled="false"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

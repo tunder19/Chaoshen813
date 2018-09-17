@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45">
+
+        <ImageView
+            android:id="@+id/declare_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/declare_item" />
+
+        <TextView
+            android:id="@+id/declare_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_44"
+            android:layout_toLeftOf="@+id/arrow_right_icon"
+            android:layout_toRightOf="@+id/declare_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/arrow_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

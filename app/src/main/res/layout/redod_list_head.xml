@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:orientation="horizontal">
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:background="@color/bg"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="场次"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_11" />
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:background="@color/bg"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="主队vs客队"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_11" />
+
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:background="@color/bg"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="方案内容"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_11" />
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:background="@color/bg"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:id="@+id/finish_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="彩果"
+        android:textColor="#666666"
+        android:textSize="@dimen/sp_11" />
+
+    <include layout="@layout/view_layout" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <include layout="@layout/view_layout" />
+
+    <LinearLayout
+        android:minHeight="@dimen/dp_50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tevtx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tevtx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tevtx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <include layout="@layout/view_layout" />
+
+    <LinearLayout
+        android:minHeight="@dimen/dp_50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tevtx4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tevtx5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11" />
+
+        <TextView
+            android:id="@+id/tevtx6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <include layout="@layout/view_layout" />
+
+    <LinearLayout
+
+        android:id="@+id/content_way"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="7"
+        android:orientation="vertical" />
+
+    <include layout="@layout/view_layout" />
+
+
+
+</LinearLayout>

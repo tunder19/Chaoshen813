@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/text_colorin3"
+            android:id="@+id/points_rank"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/adapter_rank_bg"
+            android:gravity="center"
+            android:text="1" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/tabs_user_roundimage"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_my_sport_profile"
+            app:riv_border_color="@color/white_color"
+            app:riv_border_width="@dimen/dp_0"
+            app:riv_corner_radius="@dimen/dp_70" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/points_team_icon"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:src="@drawable/points_team_icon" />
+
+        <TextView
+
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/points_team_name"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:text="广州恒大淘"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/points_matches"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="00"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/dp_10"
+            android:id="@+id/points_win"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/points_even"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/points_lose"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/points_lose_win"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="106/27"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/points_points"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/color_line_hor"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+
+</LinearLayout>

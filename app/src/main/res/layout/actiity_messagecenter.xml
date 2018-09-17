@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:divider="@null"
+        android:id="@+id/refreshLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buy_bottem"
+        android:layout_marginBottom="@dimen/dp_5" />
+    <TextView
+        android:gravity="center"
+        android:drawableTop="@drawable/no_message"
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_16"
+        android:layout_centerInParent="true"
+        android:text="消息空空如也"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

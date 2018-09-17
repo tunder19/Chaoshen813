@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/heade"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_120"
+        android:background="@drawable/update_dialog_head">
+
+        <TextView
+            android:id="@+id/update_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="世界杯新版V1.0.3来袭"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heade"
+        android:layout_alignRight="@+id/heade"
+        android:layout_below="@+id/heade"
+        android:background="@color/white_color">
+
+        <TextView
+
+            android:id="@+id/update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:layout_below="@+id/update_content"
+            android:id="@+id/show_dailog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/no_notice"
+                android:src="@drawable/nu_show_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/text_colorin3"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="不再提示"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_storng_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/show_dailog"
+            android:layout_marginTop="@dimen/dp_30"
+            android:orientation="vertical">
+
+            <View style="@style/color_line_hor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_below="@+id/line"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancel_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="取消" />
+
+                <View style="@style/color_line_ver" />
+
+                <TextView
+                    android:id="@+id/sure_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="立即体验"
+                    android:textColor="#389948"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_marginBottom="@dimen/dp_30"
+            android:id="@+id/storng_update"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/no_storng_update"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/update_bg"
+            android:gravity="center"
+            android:text="立即体验"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storng_update"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="正在下载"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_10" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_5"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/finish_download"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_below="@+id/progress_bar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/loginout_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消" />
+
+            <View style="@style/color_line_ver" />
+
+            <TextView
+                android:id="@+id/continue_bt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="继续安装"
+                android:textColor="#389948"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

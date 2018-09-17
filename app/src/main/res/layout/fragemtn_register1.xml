@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fahter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="验证码发送至"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_15" />
+
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/mobile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/mobile_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/recode_icon" />
+
+            <EditText
+                android:id="@+id/mobile_ed"
+                android:layout_width="@dimen/dp_140"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@+id/mobile_ico"
+                android:background="@null"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_14" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_toRightOf="@+id/mobile_ed"
+                android:background="@color/line_color" />
+
+            <Button
+                android:id="@+id/send_code_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/mobile_ed"
+                android:background="@null"
+                android:text="发送验证码"
+                android:textColor="#3F8BC5"
+                android:textSize="@dimen/sp_12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="@dimen/dp_276"
+            android:layout_height="@dimen/dp_47"
+            android:layout_below="@+id/password_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@drawable/selector_login_bt"
+            android:enabled="false"
+            android:text="下一步"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:checked="true"
+                android:gravity="center"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="我已阅读并同意"
+                android:textColor="@color/text_colorin9"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="《服务协议》"
+                android:textColor="#2E7AE5"
+                android:textSize="@dimen/sp_10" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/keyboardview_ll"
+        android:background="@drawable/bg_white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35">
+            <View
+                style="@style/color_line_hor"
+                />
+            <TextView
+                android:id="@+id/cancel_bt"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_colorin6"
+                android:layout_alignParentLeft="true"
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/finish_bt"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/key_board_color"
+                android:text="完成"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.example.administrator.chaoshen.widget.CustomNumKeyView
+            android:layout_marginTop="@dimen/dp_1"
+            android:id="@+id/keyboardview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+
+</RelativeLayout>

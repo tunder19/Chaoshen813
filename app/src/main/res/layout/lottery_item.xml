@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_90"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/right_top_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_13"
+        android:layout_above="@+id/dfsfdf"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:layout_marginLeft="@dimen/dp_110"
+        android:scaleType="centerInside"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/dfsfdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_5">
+
+
+        <RelativeLayout
+
+            android:id="@+id/flage"
+            android:layout_width="@dimen/dp_160"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/game_football_icon"
+                android:layout_width="@dimen/dp_58"
+                android:layout_height="@dimen/dp_58"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/game_football" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loading_gif"
+                android:layout_width="@dimen/dp_58"
+                android:layout_height="@dimen/dp_58" />
+
+
+            <RelativeLayout
+
+                android:id="@+id/lottery_father"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/game_football_icon"
+                android:layout_toRightOf="@+id/game_football_icon"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lottery_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="竞猜足彩"
+                    android:textColor="@color/XFrame_white"
+                    android:textSize="@dimen/sp_15"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/lottery_notice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lottery_name"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text=""
+                    android:textColor="@color/XFrame_white"
+                    android:textSize="@dimen/sp_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/lottery_notice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_14"
+                    android:layout_below="@+id/lottery_name"
+                    android:layout_gravity=""
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/lottery_notice"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#fff210"
+                    android:textSize="@dimen/sp_8"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/right_view"
+        style="@style/color_line_ver"
+        android:layout_width="1px"
+        android:layout_height="@dimen/dp_49"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#db6375" />
+
+
+</RelativeLayout>

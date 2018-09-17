@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:id="@+id/players_rank"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:background="@drawable/adapter_rank_bg"
+            android:gravity="center"
+            android:text="1" />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/players_rank"
+            android:layout_marginLeft="@dimen/dp_34"
+            android:id="@+id/players_name"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:text="球员名字"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_toRightOf="@+id/players_name"
+            android:ellipsize="end"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/dp_58"
+            android:id="@+id/players_team"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="球队名球队名球队名球队名球队名"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:id="@+id/players_points"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="00"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_12" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/color_line_hor"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+</LinearLayout>

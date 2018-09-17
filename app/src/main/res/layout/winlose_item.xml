@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_33"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/win_lose1"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose2"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose3"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose4"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose5"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose6"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose7"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose8"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose9"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose10"
+            layout="@layout/winlose_child_item" />
+        <include
+            android:id="@+id/win_lose11"
+            layout="@layout/winlose_child_item" />
+
+
+
+
+        <include
+            android:id="@+id/win_lose12"
+            layout="@layout/winlose_child_item" />
+
+        <include
+            android:id="@+id/win_lose13"
+            layout="@layout/winlose_child_item" />
+
+        <include
+            android:id="@+id/win_lose14"
+            layout="@layout/winlose_child_item" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

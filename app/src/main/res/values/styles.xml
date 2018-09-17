@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listDivider">@drawable/recycle_drawle</item>
+    </style>
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <!--  <item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchAuto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="cricle_textView_red">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">#C8152D</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_cricle</item>
+        <item name="android:layout_marginRight">@dimen/dp_8</item>
+
+    </style>
+
+    <style name="cricle_textView_blue">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">#0C7CB7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_cricle</item>
+        <item name="android:layout_marginRight">@dimen/dp_11</item>
+
+    </style>
+
+
+    <style name="AnimTopMiddle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/top_middle_in</item>
+        <item name="android:windowExitAnimation">@anim/top_middle_out</item>
+    </style>
+
+    <style name="My_CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox" tools:targetApi="lollipop">
+        <item name="android:colorControlActivated">@color/login_bt</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="CustomCheckboxRed" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_red_style</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_girl</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
+    <style name="Appwelcome" parent="android:Theme.Translucent.NoTitleBar.Fullscreen"/>
+    <style name="color_line_hor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+    </style>
+    <style name="color_line_ver">
+        <item name="android:layout_width">@dimen/dp_1</item>
+        <item name="android:background">@color/line_color</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+</resources>

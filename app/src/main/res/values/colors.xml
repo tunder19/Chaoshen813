@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="test_spacing2">#179641</color>
+    <color name="lunbo_color">#C8152D</color>
+    <color name="lunbo_unselect_color">#E8B2B9</color>
+    <color name="button_red">#C8152D</color>
+    <color name="line_color">#E0E0E0</color>
+    <color name="white_color">#ffffff</color>
+    <color name="bg_color">#F6F6F6</color>
+    <color name="login_bt">#C8152D</color>
+    <color name="login_bt_un">#EDC9CE</color>
+    <color name="bg">#F6F6F6</color>
+    <color name="nag_bar">#333333</color>
+    <color name="key_ok_color">#1280FA</color>
+    <color name="key_ok_color_pressed">#0174f2</color>
+    <color name="red_color">#c8152d</color>
+    <color name="red_green">#79c61d</color>
+    <color name="red_blue">#008cce</color>
+    <color name="text_colorin3">#333333</color>
+    <color name="text_colorin6">#666666</color>
+    <color name="text_colorin9">#999999</color>
+    <color name="text_color_c7">#C7C7C7</color>
+    <color name="line_color2">#f6f6f6</color>
+    <color name="bg_key_board">#e9e9e9</color>
+    <color name="key_board_color">#2E7AE5</color>
+
+    <color name="text_bule_bg">#3F8BC6</color>
+
+
+
+
+    <color name="zhibo_color">#0D6CD6</color>
+
+
+
+
+</resources>

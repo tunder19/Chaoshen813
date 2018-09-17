@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:background="@color/white_color"
+    android:layout_alignParentBottom="true">
+    <View
+        android:id="@+id/flag123"
+        android:layout_below="@+id/touzhu_double"
+        style="@style/color_line_hor"/>
+    <RelativeLayout
+        android:layout_below="@+id/flag123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/rubish_imageView_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_1"
+            android:id="@+id/rubish_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8">
+
+            <ImageView
+                android:id="@+id/rubish_imageView"
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_19"
+
+                android:src="@drawable/left_money" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="余额"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/money_left"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rubish_imageView1"
+            android:layout_below="@+id/rubish_imageView1"
+            android:layout_gravity="center_vertical"
+            android:textColor="#C8152D"
+            android:textSize="@dimen/sp_12" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/dp_9"
+        android:id="@+id/line1"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dp_34"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/rubish_imageView_rl"
+        android:background="@color/line_color"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_toRightOf="@+id/line1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selcet_zhu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0注0元"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/has_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="已选"
+            android:textColor="#999999"
+            android:textSize="@dimen/sp_10" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sure_buy"
+        android:layout_width="@dimen/dp_90"
+        android:layout_height="@dimen/dp_35"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_13"
+        android:background="#C8152D"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/XFrame_white"
+        android:textSize="@dimen/sp_15" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

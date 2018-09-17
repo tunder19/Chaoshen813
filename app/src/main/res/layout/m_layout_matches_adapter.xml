@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_11"
+        android:background="@drawable/bg_white">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                android:layout_marginRight="@dimen/dp_54"
+                android:layout_marginLeft="@dimen/dp_54"
+                android:layout_centerVertical="true"
+                android:id="@+id/host_picture"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/points_team_icon"
+                app:riv_border_color="@color/white_color"
+                app:riv_border_width="@dimen/dp_0"
+                app:riv_corner_radius="@dimen/dp_43" />
+
+
+
+
+            <TextView
+
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_14"
+                android:id="@+id/host_name"
+                android:text="队名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/which_lun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="第几轮"
+                android:textColor="@color/text_colorin6"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/time_lun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_6"
+                android:text="时间"
+                android:textColor="@color/text_colorin6"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="VS"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                android:layout_marginRight="@dimen/dp_54"
+                android:layout_marginLeft="@dimen/dp_54"
+                android:layout_centerVertical="true"
+                android:id="@+id/guest_picture"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/points_team_icon"
+                app:riv_border_color="@color/white_color"
+                app:riv_border_width="@dimen/dp_0"
+                app:riv_corner_radius="@dimen/dp_43" />
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_14"
+                android:id="@+id/guest_name"
+                android:text="队名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

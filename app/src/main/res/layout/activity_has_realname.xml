@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <View style="@style/color_line_hor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="真实姓名"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/text_colorin6"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/line_color2"
+        android:layout_marginLeft="@dimen/dp_10"
+        style="@style/color_line_hor" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="身份证号"
+            android:textColor="@color/text_colorin3"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text=""
+            android:textColor="@color/text_colorin6"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/color_line_hor" />
+</LinearLayout>

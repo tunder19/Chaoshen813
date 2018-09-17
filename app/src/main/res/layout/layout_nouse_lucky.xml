@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chekbox"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_30">
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不使用红包" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/CustomCheckboxRed"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/checkbox_t"
+            android:checked="false"
+            android:clickable="false" />
+
+</RelativeLayout>

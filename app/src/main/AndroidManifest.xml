@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.chaoshen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <meta-data android:name="android.max_aspect"
+        android:value="2.1"/>
+
+
+    <application
+        android:persistent="true"
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:resizeableActivity="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:theme="@style/Appwelcome"
+
+            android:name=".activtiy.AdvertisementActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.WinLoseActivity"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.ShopingCarActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.LoginActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.RegisterActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.FinishRegistActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="1106958091" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.RealNameActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.CashActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.BindCardActiivty"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.BankListActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.BetActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.WebActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.RechargeActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.UserActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.UserEditActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.PasswordEditActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.SettingActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.KeFuActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysVisible"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.GetHeadListActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.DealRecordActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.BetDetailActivity"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.TicketDeatilActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.LuckyMoneyActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.UseLuckyMoneyActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.MessageCenterActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.CheckCashActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.CashAliActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.GuideActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.NoticeActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.majia.activity.M_HomeActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="false"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.AboutActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.SinglePixelActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.HasRealNameActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.PayActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.activtiy.SelectPayWay"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.majia.activity.M_SettingActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.majia.activity.M_AboutActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.administrator.chaoshen.majia.activity.M_HorVotesActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+
+
+
+        <!--微信-->
+        <activity
+            android:name="com.example.administrator.chaoshen.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:grantUriPermissions="true"
+            android:exported="false"
+            android:authorities="com.example.administrator.chaoshen.fileprovider"
+            android:name="android.support.v4.content.FileProvider">
+            <meta-data
+                android:resource="@xml/file_paths"
+                android:name="android.support.FILE_PROVIDER_PATHS"/>
+
+        </provider>
+
+
+        <receiver
+            android:name="com.example.administrator.chaoshen.receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/><!--开机广播-->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/><!--网络状态改变广播-->
+                <category android:name="com.example.administrator.chaoshen" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.example.administrator.chaoshen.receiver.MyJPushMessageReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.example.administrator.chaoshen"></category>
+            </intent-filter>
+        </receiver>
+
+
+        <service android:name=".service.DaemonService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":daemon_service"/>
+
+
+        <service android:name=".service.CancelNoticeService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":service"/>
+
+
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STLoginActivityORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission..ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <!-- 在SDCard中创建与删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

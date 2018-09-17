@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_38"
+        android:background="#f6f6f6">
+
+        <RelativeLayout
+            android:id="@+id/commiption_count_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/commiption_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="17/18赛季"
+                android:textColor="@color/text_colorin6"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toRightOf="@+id/commiption_count"
+                android:src="@drawable/arrow_down" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/league_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/text_colorin9"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/vote_button"
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_29"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/shape_vote_bg"
+            android:gravity="center"
+            android:text="投票"
+            android:textColor="@color/white_color" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_70"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/line_diver">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/center_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+
+                <include
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:id="@+id/second_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/second_bar"
+                    layout="@layout/layout_bar_head"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <com.example.administrator.chaoshen.widget.VerColumn
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/second_bar"
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="wrap_content"
+                    app:v_maxHigh="@dimen/dp_76" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:id="@+id/center_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+                <include
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:id="@+id/first_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/fist_bar"
+                    layout="@layout/layout_bar_head"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+
+                <com.example.administrator.chaoshen.widget.VerColumn
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/fist_bar"
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="wrap_content"
+                    app:v_maxHigh="@dimen/dp_76" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_toRightOf="@+id/center_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                >
+
+                <include
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:visibility="visible"
+                    android:id="@+id/third_head"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/third_bar"
+                    layout="@layout/layout_bar_head"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <com.example.administrator.chaoshen.widget.VerColumn
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/third_bar"
+                    android:layout_width="@dimen/dp_34"
+                    android:layout_height="wrap_content"
+                    app:v_maxHigh="@dimen/dp_76" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_diver"
+            style="@style/color_line_hor"
+            android:layout_height="1px"
+            android:layout_above="@+id/rank_rl"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10" />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/dp_70"
+            android:layout_marginLeft="@dimen/dp_70"
+            android:orientation="horizontal"
+            android:id="@+id/rank_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/more_rank"
+            android:layout_marginBottom="@dimen/dp_14">
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_toLeftOf="@+id/first_ticket"
+                android:id="@+id/second_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/first_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/first_ticket"
+                android:id="@+id/third_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_15" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_20"
+            android:id="@+id/more_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_11"
+            android:text="更多排名>>"
+            android:textColor="#0D6CD6"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+    <View style="@style/color_line_hor" />
+</LinearLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color">
+
+    <View
+        android:background="@color/line_color2"
+        android:id="@+id/line"
+        style="@style/color_line_hor" />
+
+    <LinearLayout
+        android:id="@+id/keyboardview_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:background="@drawable/key_borad_bg"
+                android:id="@+id/ten_times"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10倍"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:background="@color/line_color2"
+                style="@style/color_line_ver" />
+
+            <TextView
+                android:background="@drawable/key_borad_bg"
+                android:id="@+id/twenty_times"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="20倍"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:background="@color/line_color2"
+                style="@style/color_line_ver" />
+
+            <TextView
+                android:background="@drawable/key_borad_bg"
+                android:id="@+id/fifty_times"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="50倍"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:background="@color/line_color2"
+                style="@style/color_line_ver" />
+
+            <TextView
+                android:background="@drawable/key_borad_bg"
+                android:id="@+id/one_hunder_times"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="100倍"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <View
+            android:background="@color/line_color2"
+            android:id="@+id/line2_head"
+            style="@style/color_line_hor" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_150"
+            android:background="@drawable/bg_white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/right_bt"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/line_color2"
+                    style="@style/color_line_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/line_color2"
+                    style="@style/color_line_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/line_color2"
+                    style="@style/color_line_hor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:background="@drawable/key_borad_bg"
+                        android:id="@+id/number0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:background="@color/line_color2"
+                        style="@style/color_line_ver" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/text_colorin3"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/right_bt"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/delete_btton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#CCCCCC">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/delete_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/sure_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#C8152D"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

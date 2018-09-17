@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/about_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="关于"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/color_line_hor"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/line_color2" />
+
+
+        <RelativeLayout
+            android:id="@+id/clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="清理缓存"
+                android:textColor="@color/text_colorin3"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textColor="@color/text_colorin9"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <View style="@style/color_line_hor" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@color/text_colorin9" />
+
+
+        <TextView
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_toRightOf="@+id/players_rank"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:text="球员"
+            android:textColor="@color/text_colorin9"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_55"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:text="球队"
+            android:textColor="@color/text_colorin9"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:text="进球数"
+            android:textColor="@color/text_colorin9"
+            android:textSize="@dimen/sp_12" />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/color_line_hor"
+        android:layout_marginLeft="@dimen/dp_10" />
+
+</LinearLayout>

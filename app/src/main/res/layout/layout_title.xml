@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/title_top_forweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/web_top_change1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/action_bar_bg3"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/title_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+        <!-- 首先定义标题栏 -->
+        <RelativeLayout
+
+            android:id="@+id/biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_44">
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/text_title_bg"
+                    android:layout_width="@dimen/dp_137"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_title_pop"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="标题栏"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_18" />
+
+
+                <TextView
+                    android:id="@+id/popup_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="弹窗主题"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/popup_title_im"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/text_title"
+                    android:src="@drawable/down_arrow"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/button_backward"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_30">
+
+                <Button
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center"
+                    android:background="@drawable/arrow"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/button_backward_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="@dimen/dp_22"
+                android:layout_height="@dimen/dp_22"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_forward"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

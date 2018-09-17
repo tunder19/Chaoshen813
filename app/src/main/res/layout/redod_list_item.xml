@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_55"
+    android:orientation="horizontal">
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="场次" />
+
+    <include layout="@layout/view_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/tevtx1"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/tevtx2"
+            android:layout_marginBottom="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_1"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#2D7AE4"
+            android:textSize="@dimen/sp_11"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/tevtx3"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_1"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:id="@+id/buy_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="投注" />
+
+    <include layout="@layout/view_layout" />
+
+    <TextView
+        android:textSize="@dimen/sp_11"
+        android:id="@+id/finish_number"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="赛果" />
+
+    <include layout="@layout/view_layout" />
+
+</LinearLayout>

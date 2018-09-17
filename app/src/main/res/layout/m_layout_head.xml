@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.stx.xhb.xbanner.XBanner
+        app:pointTopBottomPadding="5dp"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_135"
+        app:AutoPlayTime="5000"
+        app:placeholderDrawable="@drawable/lunbo_nodata"
+        app:pointNormal="@drawable/shape_noraml"
+        app:pointSelect="@drawable/shape_selected"
+        app:pointsContainerBackground="#442e2e2e"
+        app:pointsPosition="RIGHT"
+        app:tipTextColor="#FFFFFF"
+        app:tipTextSize="@dimen/sp_14"
+        app:isAutoPlay="true"
+        app:isShowIndicatorOnlyOne="true"
+        app:pageChangeDuration="1000"
+        />
+
+</LinearLayout>

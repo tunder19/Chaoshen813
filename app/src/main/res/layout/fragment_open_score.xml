@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshExpandableListView
+        android:groupIndicator="@null"
+        android:id="@+id/refresh_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/no_net_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/dp_14"
+        android:drawableTop="@drawable/no_netword"
+        android:gravity="center_horizontal"
+        android:text="无网络"
+        android:textColor="@color/text_colorin9"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+
+
+    <TextView
+        android:id="@+id/no_net_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/dp_14"
+        android:drawableTop="@drawable/no_record"
+        android:gravity="center_horizontal"
+        android:text="暂无数据"
+        android:textColor="@color/text_colorin9"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fragmen_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp_120"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/message_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[中奖]"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/message_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="你的订单"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/sp_14" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/system_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="时间"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/sp_12" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="#f6f6f6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="@dimen/dp_10"
+                android:id="@+id/message_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/text_colorin6"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

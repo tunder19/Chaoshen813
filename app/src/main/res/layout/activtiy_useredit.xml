@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:background="@drawable/shape_white_backg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#333333"
+            android:id="@+id/nick_nmae_fa"
+            android:layout_centerVertical="true"
+            android:text="昵称: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:singleLine="true"
+            android:maxLength="10"
+            android:background="@null"
+            android:id="@+id/user_nick_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#333333"
+            android:layout_toRightOf="@+id/nick_nmae_fa"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/clear_name"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/clear_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

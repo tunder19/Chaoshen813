@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <include
+
+        android:id="@+id/itme_1"
+        layout="@layout/lottery_item"/>
+    <include layout="@layout/line_vertical"/>
+
+    <include
+        android:id="@+id/itme_2"
+        layout="@layout/lottery_item"/>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="false"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include
+            android:clickable="true"
+            android:id="@+id/red_bt1"
+            layout="@layout/daletou_cricle_item" />
+
+        <include
+            android:clickable="false"
+            android:id="@+id/red_bt2"
+            layout="@layout/daletou_cricle_item" />
+
+        <include
+            android:clickable="false"
+            android:id="@+id/red_bt3"
+            layout="@layout/daletou_cricle_item" />
+
+        <include
+            android:clickable="false"
+            android:id="@+id/red_bt4"
+            layout="@layout/daletou_cricle_item" />
+
+        <include
+            android:clickable="false"
+            android:id="@+id/red_bt5"
+            layout="@layout/daletou_cricle_item" />
+
+
+        <include
+            android:clickable="false"
+            android:id="@+id/bluebt_1"
+            layout="@layout/daletou_cricle_blueitem" />
+
+        <include
+            android:clickable="false"
+            android:id="@+id/bluebt_2"
+            layout="@layout/daletou_cricle_blueitem" />
+    </LinearLayout>
+
+</HorizontalScrollView>
