@@ -321,7 +321,7 @@ public class AdvertisementActivity extends BaseActivity {
                         ChaoshenAlertDialog dialog = new ChaoshenAlertDialog(getContext());
                         dialog.setOne_button("不支持模拟器使用哦", "确定");
                         //showMsg("未插入SIM卡，建议插入后使用");
-                        //ssdfj
+                        //ssdfjasas
                         dialog.show();
                         dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
                             @Override
