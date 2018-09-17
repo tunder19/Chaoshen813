@@ -38,6 +38,7 @@ import com.example.administrator.chaoshen.util.SystemUtil;
 import com.example.administrator.chaoshen.widget.ChaoshenAlertDialog;
 import com.snail.antifake.jni.EmulatorCheckService;
 import com.youth.xframe.cache.XCache;
+import com.youth.xframe.utils.log.XLog;
 import com.youth.xframe.utils.permission.XPermission;
 
 public class AdvertisementActivity extends BaseActivity {
@@ -321,7 +322,7 @@ public class AdvertisementActivity extends BaseActivity {
                         ChaoshenAlertDialog dialog = new ChaoshenAlertDialog(getContext());
                         dialog.setOne_button("不支持模拟器使用哦", "确定");
                         //showMsg("未插入SIM卡，建议插入后使用");
-                        //ssdfjasas
+                        XLog.e("");
                         dialog.show();
                         dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
                             @Override
